@@ -14,7 +14,7 @@ pipeline {
         stage("ssh Server"){
             steps{
                 sshagent(['CONNECT_DEPLOY_WAR']) {
-                        sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/demo-deploy-file-war-pipeline@2/target/demo-0.0.1-SNAPSHOT.war ec2-user@23.23.69.209:/opt/tomcat/webapps'
+                    sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/demo-deploy-file-war-pipeline@2/target/demo-0.0.1-SNAPSHOT.war ec2-user@23.23.69.209:/opt/tomcat/webapps'
                 }
             }
        }
