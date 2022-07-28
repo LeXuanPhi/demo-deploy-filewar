@@ -13,6 +13,6 @@ public class ControllerDemo {
     @GetMapping(value = "/demo")
     public String Demo(){
         logger.info("test log ne nha");
-        return "xin chao tui la war new auto ";
+        return "xin chao tui la le xuan phi dep trai nhat qua dat ";
     }
 }
